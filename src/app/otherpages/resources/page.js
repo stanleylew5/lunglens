@@ -1,8 +1,8 @@
-import Landing from "@/components/Landing";
+import Resources from "@/components/Resources";
 const Home = () => {
   return (
     <div>
-      <Landing/>
+      <Resources/>
     </div>
   );
 }

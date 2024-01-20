@@ -1,8 +1,8 @@
-import Landing from "@/components/Landing";
+import Model from "./components/Model";
 const Home = () => {
   return (
     <div>
-      <Landing/>
+      <Model/>
     </div>
   );
 }

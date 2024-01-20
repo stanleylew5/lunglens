@@ -12,6 +12,12 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors:{
+        regalblack: '#040309',
+        regalpurple: '#451541',
+        regalmagenta: '#FB28FF',
+        regalblue: '#0175FD',
+      },
     },
   },
   plugins: [],

@@ -4,9 +4,9 @@ import Image from "next/image";
 import support from "../../public/images/support.png";
 import clip from "../../public/images/clip.png";
 import tech from "../../public/images/tech.png";
-import nih from "../../public/images/nih.png";
-import ala from "../../public/images/alareal.jpg";
-import acs from "../../public/images/acs.png";
+import steps from "../../public/images/steps.png";
+import general from "../../public/images/general.png";
+import other from "../../public/images/other.png";
 import Link from "next/link";
 const Resources = () => {
     return(
@@ -14,7 +14,7 @@ const Resources = () => {
             <Navigation/>
             <div className="text-white pt-28">
                 <div className="mx-14 border-1 rounded-lg pt-4 shadow-3xl shadow-regalmagenta/50">
-                    <p className="text-center text-5xl pb-2 font-medium">Recommended Resources</p>
+                    <p className="text-center text-5xl pb-2 font-medium bg-clip-text text-transparent bg-gradient-to-b from-textpurple from-20% via-textmidpink via-80% to-textpink to-100% mt-2 hover:opacity-0.8">Recommended Resources</p>
                     <p className="text-center text-lg">Explore these helpful resources for lung cancer patients and their families</p>
                 </div>
                 <div className="mt-6 grid grid-cols-3 mx-32 place-items-center border-1 rounded-lg py-4 shadow-regalmagenta/50 shadow-3xl mb-8">
@@ -47,17 +47,17 @@ const Resources = () => {
                     </div>
                     <div className="pt-4">
                         <Link href="https://www.mskcc.org/cancer-care/types/lung/diagnosis/stages-lung">
-                            <Image src={ala.src} width={125} height={125}  alt="lcf"/>
+                            <Image src={steps.src} width={125} height={125}  alt="lcf"/>
                         </Link>
                     </div>
                     <div>
                         <Link href="https://www.cancer.org/">
-                            <Image src={acs.src} width={150} height={150} alt="nih"/>
+                            <Image src={general.src} width={150} height={150} alt="nih"/>
                         </Link>
                     </div>
                     <div>
                         <Link href="https://www.cancer.gov/types">
-                            <Image src={nih.src} width={150} height={150} alt="nih"/>
+                            <Image src={other.src} width={150} height={150} alt="nih"/>
                         </Link>
                     </div>
                     <div>

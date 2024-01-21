@@ -11,7 +11,7 @@ const Landing = () => {
             <div className="text-white pt-28">
                 <div className="mx-14 border-1 rounded-lg pt-4 shadow-3xl shadow-regalmagenta/50">
                     <p className="text-center text-5xl pb-2 font-medium bg-clip-text text-transparent bg-gradient-to-b from-textpurple from-20% via-textmidpink via-80% to-textpink to-100% mt-2 hover:opacity-0.8">Welcome to Lung Lens</p>
-                    <p className="text-center text-xl">"Over 50% of Asian American females diagnosed with lung cancer did not smoke."</p>
+                    <p className="text-center text-xl font-bold">"Over 50% of Asian American females diagnosed with lung cancer have never smoked."</p>
                     <p className="text-center text-xl">UCSF Helen Diller Family Comprehensive Cancer Center</p>
                 </div>
                 <div className="grid grid-cols-10 my-16 mx-24 shadow-3xl shadow-regalmagenta/50 items-center border-1 py-4">

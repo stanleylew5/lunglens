@@ -1,9 +1,9 @@
 import Resources from "@/components/Resources";
-const Home = () => {
+const ResourcesPage = () => {
   return (
     <div>
       <Resources/>
     </div>
   );
 }
-export default Home
+export default ResourcesPage;

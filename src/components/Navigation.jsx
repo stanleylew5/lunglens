@@ -11,7 +11,7 @@ const Navigation = () => {
       <Navbar.Brand>
         <Link className="flex flex-grow md:px-3 space-x-1.5 md:space-x-2.5" style={{ textDecoration: "none" }} href="/">
             <Image src={dumplogo.src} height={75} width={75} alt="dumplogo" className="mr-3"/>
-            <p className="flex items-center bg-clip-text text-transparent text-4xl bg-gradient-to-b from-textpurple from-20% via-textmidpink via-80% to-textpink to-100% mt-2 hover:opacity-0.8">Lung Lens</p>
+            <p className="flex items-center bg-clip-text text-transparent text-4xl bg-gradient-to-b from-textpurple from-20% via-textmidpink via-80% to-textpink to-100% mt-2 hover:opacity-0.8 font-bold">Lung Lens</p>
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav">

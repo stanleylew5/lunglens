@@ -34,17 +34,17 @@ const Resources = () => {
                 }}>
                     <div>
                         <Link href="https://www.lungcancerresearchfoundation.org/for-patients/patient-stories/">
-                            <Image src={support.src} width={150} height={150} alt="support"/>
+                            <Image src={support.src} width={150} height={150} alt="support" className="transition-transform transform hover:scale-105"/>
                         </Link>
                     </div>
                     <div>
                         <Link href="https://www.mayoclinic.org/diseases-conditions/lung-cancer/symptoms-causes/syc-20374620">
-                            <Image src={clip.src} width={150} height={150} alt="clip"/>
+                            <Image src={clip.src} width={150} height={150} alt="clip" className="transition-transform transform hover:scale-105"/>
                         </Link>
                     </div>
                     <div>
                         <Link href="https://www.cdc.gov/cancer/lung/basic_info/diagnosis_treatment.htm#:~:text=it%20has%20spread.-,People%20with%20non%2Dsmall%20cell%20lung%20cancer%20can%20be%20treated,doctors%20cut%20out%20cancer%20tissue">
-                            <Image src={tech.src} width={150} height={150} alt="tech"/>
+                            <Image src={tech.src} width={150} height={150} alt="tech" className="transition-transform transform hover:scale-105"/>
                         </Link>
                     </div>
                     <div className="text-center">
@@ -58,17 +58,17 @@ const Resources = () => {
                     </div>
                     <div className="pt-4">
                         <Link href="https://www.mskcc.org/cancer-care/types/lung/diagnosis/stages-lung">
-                            <Image src={steps.src} width={125} height={125}  alt="lcf"/>
+                            <Image src={steps.src} width={125} height={125}  alt="lcf" className="transition-transform transform hover:scale-105"/>
                         </Link>
                     </div>
                     <div>
                         <Link href="https://www.cancer.org/">
-                            <Image src={general.src} width={150} height={150} alt="nih"/>
+                            <Image src={general.src} width={150} height={150} alt="nih" className="transition-transform transform hover:scale-105"/>
                         </Link>
                     </div>
                     <div>
                         <Link href="https://www.cancer.gov/types">
-                            <Image src={other.src} width={150} height={150} alt="nih"/>
+                            <Image src={other.src} width={150} height={150} alt="nih" className="transition-transform transform hover:scale-105"/>
                         </Link>
                     </div>
                     <div>

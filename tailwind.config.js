@@ -16,6 +16,7 @@ module.exports = {
         regalblack: '#040309',
         regalpurple: '#451541',
         regalmagenta: '#FB28FF',
+        regalhovermagenta: '#BA2DBD',
         regalblue: '#0175FD',
         textpurple: '#5b00fa',
         textpink: '#f98ef9',

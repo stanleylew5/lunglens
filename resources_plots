@@ -1,0 +1,20 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+#data from: https://www.kaggle.com/datasets/jillanisofttech/lung-cancer-detection
+
+df = pd.read_csv('cancer patient data sets.csv')
+display(df)
+
+#plotting age
+axes = df['Age'].plot(kind = 'hist')
+axes.set_xlabel('Age Range of Patient')
+plt.title("Age Frequency of Lung Cancer Patients")
+plt.show()
+
+#plotting air pollution
+axes = df["Air Pollution"].plot(kind = 'hist')
+axes.set_xlabel('Air Pollution Rating')
+plt.title("Air Pollution Rating Versus Frequency of Lung Cancer")
+
+#plotting gender 1 = male, 2 = female
+df["Gender"].plot(kind = 'hist')

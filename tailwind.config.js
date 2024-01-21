@@ -21,6 +21,9 @@ module.exports = {
         textpink: '#f98ef9',
         textmidpink: '#fe00ff',
       },
+      boxShadow:{
+        '3xl': '0px 0px 16px #FFFFFF;' 
+      }
     },
   },
   plugins: [],

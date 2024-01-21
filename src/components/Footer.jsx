@@ -1,6 +1,6 @@
 const Footer = () => {
     return(
-        <div>Hello World!</div>
+        <div className="text-white text-center bottom-0">&copy; Made with Love by Team Lung Lunatics</div>
     );
 }
 export default Footer;

@@ -4,7 +4,7 @@ import "./globals.css";
 const inter = Orbitron({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "HerLungs",
+  title: "Lung Lens",
   description: "",
 };
 

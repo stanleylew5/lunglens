@@ -32,15 +32,17 @@ const LungModel = () => {
   return (
     <div className="bg-gradient-to-b from-regalblack from-0% via-regalblack via-75% to-regalpurple to-100% h-screen">
       <Navigation />
-      <div className="text-white">Lung Cancer Model</div>
-      <div className="text-white pt-36">
-        <div className="grid grid-cols-2 mx-12">
-          <div className="bg-red-500">
-            <FileUploadSection /> {/* Use FileUploadSection here */}
-          </div>
-          <div className="bg-blue-500">test</div>
-          <div className="bg-orange-500">test</div>
-          <div className="bg-yellow-500">test</div>
+      <div className="pt-28">
+        <div className="text-white">Lung Cancer Model</div>
+        <div className="text-white pt-36">
+            <div className="grid grid-cols-2 mx-12">
+            <div className="bg-red-500">
+                <FileUploadSection /> {/* Use FileUploadSection here */}
+            </div>
+            <div className="bg-blue-500">test</div>
+            <div className="bg-orange-500">test</div>
+            <div className="bg-yellow-500">test</div>
+            </div>
         </div>
       </div>
     </div>

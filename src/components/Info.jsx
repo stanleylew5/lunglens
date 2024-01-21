@@ -25,20 +25,20 @@ const Info = () => {
                             <div className="text-xl">In an effort to bring awareness to how lung cancer is related to characteristics such as age & air pollution, Lung Lens offers a look into datasets of lung cancer detection!</div>
                             <div className="mt-8">
                                 <button>
-                                    <Link className="bg-clip-text text-transparent bg-gradient-to-b from-textpurple from-20% via-textmidpink via-80% to-textpink to-100% mt-2 hover:opacity-0.8 font-bold" style={{ textDecoration: "none" }} href="https://www.kaggle.com/datasets/jillanisofttech/lung-cancer-detection">Check out the dataset we used!</Link>
+                                    <Link className="bg-clip-text text-transparent bg-gradient-to-b from-textpurple from-20% via-textmidpink via-80% to-textpink to-100% mt-2 hover:opacity-0.8 font-bold" style={{ textDecoration: "none" }} href="https://www.kaggle.com/datasets/jillanisofttech/lung-cancer-detection">Click to check out the dataset we used!</Link>
                                 </button>
                             </div>
                         </div>
                         <div className="shadow-3xl shadow-regalmagenta/50">
                             <Image src={af.src} height={275} width={275} alt="af"/>
                         </div>
-                        <div className="shadow-3xl shadow-regalmagenta/50 mt-2">
+                        <div className="shadow-3xl shadow-regalmagenta/50 mt-4">
                             <Image src={malignant.src} height={300} width={150} alt="malignant"/>
                         </div>
-                        <div className="shadow-3xl shadow-regalmagenta/50">
+                        <div className="shadow-3xl shadow-regalmagenta/50 mt-4">
                             <Image src={normal.src} height={300} width={150} alt="normal"/>
                         </div>
-                        <div className="shadow-3xl shadow-regalmagenta/50 mt-4">
+                        <div className="shadow-3xl shadow-regalmagenta/50 mt-6">
                             <Image src={benign.src} height={300} width={150} alt="benign"/>
                         </div>
                         <div className="mt-2">

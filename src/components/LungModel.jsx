@@ -67,12 +67,12 @@ const LungModel = () => {
                     <p className="text-center text-xl text-white">Protect your health! Upload your CT scan to confirm you don't have lung cancer!</p>
                 </div>
                 <div className='grid grid-cols-2 mb-8 gap-y-8 gap-x-48'>
-                    <div {...getRootProps()} className="dropzone col-span-2 text-center mt-8 border-1 mx-32 shadow-3xl shadow-regalmagenta/50">
+                    <div {...getRootProps()} className="dropzone col-span-2 text-center mt-8 border-1 mx-32 shadow-3xl shadow-regalmagenta/50 text-white">
                         <input {...getInputProps()} />
                         {
                             isDragActive ?
                             <p>Drop the CT scan image here ...</p> :
-                            <p className='text-white text-2xl font-bold mx-8 my-2'>Click me to upload your CT scan</p>
+                            <p className='text-2xl font-bold mx-8 my-2 '>Click me to upload your CT scan</p>
                         }
                     </div>
                     {isPredicting && (

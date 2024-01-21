@@ -18,7 +18,7 @@ const Landing = () => {
                     <div className="row-span-2 px-6 text-center col-span-5">
                         <div className="text-4xl">What is Lung Cancer?</div>
                         <div className="pt-12">Lung cancer is a type of cancer that starts in the lungs. It is one of the leading causes of cancer-related deaths worldwide.</div>
-                        <button className="border-2 mx-52 rounded-xl py-2 px-8 mt-8 shadow-indigo-500/50 shadow-2xl">
+                        <button className="border-2 mx-52 rounded-xl py-2 px-8 mt-8 shadow-regalmagenta/50 hover:shadow-indigo-500/50 shadow-3xl">
                             <Link href="/info" className="text-white" style={{ textDecoration: "none" }}>Learn More</Link>
                         </button>
                     </div>

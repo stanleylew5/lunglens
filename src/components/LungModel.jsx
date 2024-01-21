@@ -101,7 +101,7 @@ const LungModel = () => {
                         </div>
                     )}
                     {prediction !== null && (
-                        <div>
+                        <div className='col-span-2 mx-32 border-1 shadow-3xl shadow-regalmagenta/50 text-center text-white pt-2'>
                             <h2 className='text-xl'>Prediction Result:</h2>
                             <p className='text-xl'>{prediction ? 'Lung Cancer Detected' : 'No Lung Cancer Detected'}</p>
                         </div>

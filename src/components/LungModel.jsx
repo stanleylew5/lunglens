@@ -109,7 +109,7 @@ const LungModel = () => {
                     <div className='border-1 rounded-xl ml-64 flex justify-center'>
                         <Image src={learningrate.src} width={250} height={250} alt="learning rate"/>
                     </div>
-                    <div className='border-1 rounded-xl mr-48 text-sm text-white px-2 pb-2 pt-8 text-center'>
+                    <div className='border-1 rounded-xl mr-48 text-sm text-white px-2 pb-2 pt-2 text-center'>
                         Using CT scans from the Iraq-Oncology Teaching Hospital/National Center for Cancer Diseases (Q_OTH/NCD) lung cancer dataset. This data was collected in the Fall of 2019 over 3 months, and includes healthy patients, patients with benign tumors, and patients with malignant tumors. 
                         With this dataset we were able to train our model to get a learning rate of 0.0075, ensuring our model’s prediction accuracy.
                     </div>

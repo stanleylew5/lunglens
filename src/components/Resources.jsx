@@ -1,3 +1,4 @@
+"use client";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import Image from "next/image";
@@ -8,16 +9,29 @@ import steps from "../../public/images/steps.png";
 import general from "../../public/images/general.png";
 import other from "../../public/images/other.png";
 import Link from "next/link";
+import { motion } from "framer-motion";
 const Resources = () => {
     return(
         <div className="bg-gradient-to-b from-regalblack from-0% via-regalblack via-75% to-regalpurple to-100% h-screen">
             <Navigation/>
             <div className="text-white pt-28">
-                <div className="mx-14 border-1 rounded-lg pt-4 shadow-3xl shadow-regalmagenta/50">
+                <motion.div className="mx-14 border-1 rounded-lg pt-4 shadow-3xl shadow-regalmagenta/50"
+                initial={{y: -40, opacity: 0}}
+                animate={{y: 0, opacity: 1}}
+                transition={{
+                y: {type: 'tween', ease: 'easeOut', duration: 1.4},
+                opacity: {type: 'tween', ease: 'easeOut', duration: 1.4},
+                }}>
                     <p className="text-center text-5xl pb-2 font-medium bg-clip-text text-transparent bg-gradient-to-b from-textpurple from-20% via-textmidpink via-80% to-textpink to-100% mt-2 hover:opacity-0.8">Recommended Resources</p>
-                    <p className="text-center text-lg">Explore these helpful resources for lung cancer patients and their families</p>
-                </div>
-                <div className="mt-14 grid grid-cols-3 mx-32 place-items-center border-1 rounded-lg py-4 shadow-regalmagenta/50 shadow-3xl mb-8">
+                    <p className="text-center text-lg">Click the icons to explore helpful resources for lung cancer patients and their families</p>
+                </motion.div>
+                <motion.div className="mt-14 grid grid-cols-3 mx-32 place-items-center border-1 rounded-lg py-4 shadow-regalmagenta/50 shadow-3xl mb-8"
+                initial={{y: -60, opacity: 0}}
+                animate={{y: 0, opacity: 1}}
+                transition={{
+                y: {type: 'tween', ease: 'easeOut', duration: 1.4},
+                opacity: {type: 'tween', ease: 'easeOut', duration: 1.4},
+                }}>
                     <div>
                         <Link href="https://www.lungcancerresearchfoundation.org/for-patients/patient-stories/">
                             <Image src={support.src} width={150} height={150} alt="support"/>
@@ -66,7 +80,7 @@ const Resources = () => {
                     <div>
                         <div className="font-bold">Other Types of Cancer</div>
                     </div>
-                </div>
+                </motion.div>
                 <Footer/>
             </div>
         </div>

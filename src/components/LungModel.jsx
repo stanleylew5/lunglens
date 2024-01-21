@@ -5,6 +5,7 @@ import Footer from './Footer';
 import { useDropzone } from 'react-dropzone';
 import learningrate from '../../public/images/learningrate.png'
 import Image from 'next/image';
+import { motion } from "framer-motion";
 const LungModel = () => {
     const [prediction, setPrediction] = useState(null);
     const [isPredicting, setIsPredicting] = useState(false);
@@ -62,11 +63,23 @@ const LungModel = () => {
         <div className="lung-model-container bg-gradient-to-b from-regalblack from-0% via-regalblack via-75% to-regalpurple to-100% h-screen">
             <Navigation/>
             <div className='pt-28'>
-                <div className="mx-14 border-1 rounded-lg pt-4 shadow-3xl shadow-regalmagenta/50">
+                <motion.div className="mx-14 border-1 rounded-lg pt-4 shadow-3xl shadow-regalmagenta/50" 
+                initial={{y: -40, opacity: 0}}
+                animate={{y: 0, opacity: 1}}
+                transition={{
+                y: {type: 'tween', ease: 'easeOut', duration: 1.4},
+                opacity: {type: 'tween', ease: 'easeOut', duration: 1.4},
+                }}>
                     <p className="text-center text-5xl pb-2 font-medium bg-clip-text text-transparent bg-gradient-to-b from-textpurple from-20% via-textmidpink via-80% to-textpink to-100% mt-2 hover:opacity-0.8">Lung Cancer Model</p>
                     <p className="text-center text-xl text-white">Protect your health! Upload your CT scan to confirm you don't have lung cancer!</p>
-                </div>
-                <div className='grid grid-cols-2 mb-8 gap-y-8 gap-x-48'>
+                </motion.div>
+                <motion.div className='grid grid-cols-2 mb-8 gap-y-8 gap-x-48'
+                initial={{y: -60, opacity: 0}}
+                animate={{y: 0, opacity: 1}}
+                transition={{
+                y: {type: 'tween', ease: 'easeOut', duration: 1.4},
+                opacity: {type: 'tween', ease: 'easeOut', duration: 1.4},
+                }}>
                     <div {...getRootProps()} className="dropzone col-span-2 text-center mt-8 border-1 mx-32 shadow-3xl shadow-regalmagenta/50 text-white">
                         <input {...getInputProps()} />
                         {
@@ -100,7 +113,7 @@ const LungModel = () => {
                         Using CT scans from the Iraq-Oncology Teaching Hospital/National Center for Cancer Diseases (Q_OTH/NCD) lung cancer dataset. This data was collected in the Fall of 2019 over 3 months, and includes healthy patients, patients with benign tumors, and patients with malignant tumors. 
                         With this dataset we were able to train our model to get a learning rate of 0.0075, ensuring our model’s prediction accuracy.
                     </div>
-                </div>
+                </motion.div>
             </div>
             <Footer/>
         </div>
